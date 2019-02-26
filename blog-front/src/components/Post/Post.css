@@ -1,0 +1,10 @@
+.post_header {
+    font-size: large;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.post_text {
+    word-wrap: break-word;
+    font-size: medium;
+}

@@ -1,0 +1,45 @@
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.header-link {
+    display: inline;
+    padding: 5px;
+}
+
+/*.header-link:hover {*/
+    /*color: #000000;*/
+/*}*/
+
+.header {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    background-color: #d2d2d2;
+    font-size: large;
+    position: fixed;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    height: 45px;
+    /*color: #606060;*/
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%
+}
