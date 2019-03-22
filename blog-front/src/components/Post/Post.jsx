@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {withRouter} from "react-router-dom";
 
 import './Post.css';
 
@@ -12,12 +11,12 @@ class Post extends Component {
 
     if (post) return (
         <div className='post'>
-          <div className='post_header' onClick={() => this.props.history.push(`/posts/${post.postId}`)}>
-            {post.postHeader}
-          </div>
-          <div className='post_text'>
-            {post.postText}
-          </div>
+            <div className='post_header'>
+                {post.header}
+            </div>
+            <div className='post_text'>
+                {post.text}
+            </div>
         </div>
       );
     else return (
@@ -28,4 +27,4 @@ class Post extends Component {
   }
 }
 
-export default withRouter(Post);
+export default Post;

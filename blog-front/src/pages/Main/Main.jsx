@@ -24,9 +24,9 @@ class Main extends Component {
     return (
       <div className='main_page'>
         {postList && postList.map(post => (
-            <div className='page_box'>
-              <Post post={post}/>
-            </div>
+              <div className='page_box' onClick={() => this.props.history.push(`/posts/${post.id}`)}>
+                <Post post={post}/>
+              </div>
         ))}
       </div>
     );
